@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Kumar Gupta | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header data-aos="fade-down">
+    <img src="assets/ayush-photo.jpeg" alt="Ayush Kumar Gupta" class="profile-pic">
+    <h1>Ayush Kumar Gupta</h1>
+    <p class="typed-text"></p>
+    <div class="social-links">
+      <a href="https://github.com/ayushgupta36" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ayush-kumar-gupta-102981245" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/ayush_gupta_63?igsh=MWNlMGw0cTEzc3A3dw==" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <a href="assets/resume.pdf" download class="btn">Download Resume</a>
+    <a href="assets/azure_certificate.pdf" download class="btn">Download AZ-900 Certificate</a>
+  </header>
+
+  <section id="personal-info" data-aos="fade-up">
+    <h2>Personal Information</h2>
+    <div class="info-grid">
+      <div><strong>Name:</strong> Ayush Kumar Gupta</div>
+      <div><strong>Email:</strong> ayushkumargupta36@gmail.com</div>
+      <div><strong>Phone:</strong> 7485055300</div>
+      <div><strong>Location:</strong> Bhopal, India</div>
+    </div>
+  </section>
+
+  <section id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <div class="education-card">
+      <h3>Technocrats Institute of Technology, Bhopal</h3>
+      <p>Bachelor of Technology (B.Tech)</p>
+      <p>Branch: Computer Science Engineering (AI & ML)</p>
+      <p>Expected Graduation: 2026</p>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <p>C++</p>
+        <div class="skill-bar"><div style="width: 85%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <p>Python</p>
+        <div class="skill-bar"><div style="width: 90%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <p>SQL</p>
+        <div class="skill-bar"><div style="width: 75%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <p>HTML & CSS</p>
+        <div class="skill-bar"><div style="width: 80%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <p>Azure Fundamentals</p>
+        <div class="skill-bar"><div style="width: 70%;"></div></div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" data-aos="zoom-in">
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/mwkjnxyz" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+  <a href="assets/resume.pdf" download class="floating-btn" title="Download Resume">
+    <i class="fas fa-download"></i>
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Ayush Kumar Gupta</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    AOS.init();
+    var typed = new Typed('.typed-text', {
+      strings: ["AI & ML Enthusiast", "Developer", "Azure Certified"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+</body>
+</html>

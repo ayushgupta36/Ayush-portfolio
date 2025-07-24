@@ -5,20 +5,42 @@ body {
   color: #ffffff;
   scroll-behavior: smooth;
 }
-
-header {
-  text-align: center;
-  padding: 40px 20px;
-  background: #1e1e1e;
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
 }
 
-.profile-pic {
-  width: 150px;
-  height: 150px;
+.profile-pic-side {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  border: 3px solid #00bcd4;
+  border: 3px solid #ff4d88;
   object-fit: cover;
-  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.name-plate {
+  display: inline-block;
+  padding: 20px 40px;
+  background: linear-gradient(145deg, #ff4d88, #ff3380);
+  border-radius: 15px;
+  box-shadow: 
+    5px 5px 15px rgba(0,0,0,0.5),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.name-plate h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 
+    2px 2px 4px rgba(0,0,0,0.6),
+    4px 4px 10px rgba(0,0,0,0.4);
 }
 
 .social-links a {
@@ -178,3 +200,66 @@ footer {
 .contact-form button:hover {
   background-color: #008c9e;
 }
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  margin-top: 40px;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.profile-pic-side {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ff4d88;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.name-plate {
+  padding: 20px 40px;
+  background: linear-gradient(145deg, #ff4d88, #ff3380);
+  border-radius: 15px;
+  box-shadow: 
+    5px 5px 15px rgba(0,0,0,0.5),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.name-plate h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6), 4px 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Align buttons & social links below nameplate */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-links a {
+  font-size: 24px;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ff4d88;
+}
+
+
